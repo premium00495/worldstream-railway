@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#0f0c29">
-    <title>🏏 PREMIUM LIVE | PAK vs IND</title>
+    <title>🏏 PREMIUM LIVE MATCH | PAK vs IND</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
@@ -214,7 +214,7 @@
         <div class="glass-panel">
             <div class="panel-title">Join Community</div>
             <div class="btn-grid">
-                <a href="#" class="action-btn wa" target="_blank">
+                <a href="https://whatsapp.com/channel/0029VbC23ZlCMY0CaxMqvW30" class="action-btn wa" target="_blank">
                     <span>📱 WhatsApp</span>
                 </a>
                 <a href="https://t.me/CrazyTechOp" class="action-btn tg" target="_blank">
@@ -252,7 +252,7 @@
         // Fetch stream URLs from server (EXACT ORIGINAL LOGIC)
         async function getStreamUrls() {
             try {
-                const response = await fetch('/api/streams.js');
+                const response = await fetch('/api/streams');
                 const data = await response.json();
                 return data.urls;
             } catch (error) {
@@ -358,7 +358,7 @@
                 } else if (videoWrapper.mozRequestFullScreen) {
                     videoWrapper.mozRequestFullScreen();
                 }
-                showToast('Fullscreen ON', '⛶');
+                 showToast('Fullscreen ON', '⛶');
             } else {
                 if (document.exitFullscreen) {
                     document.exitFullscreen();
