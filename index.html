@@ -358,6 +358,15 @@
                 } else if (videoWrapper.mozRequestFullScreen) {
                     videoWrapper.mozRequestFullScreen();
                 }
+                 showToast('Fullscreen ON', '⛶');
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+                showToast('Fullscreen OFF', '⛶');
+            }
         }
 
         // Toast notification
